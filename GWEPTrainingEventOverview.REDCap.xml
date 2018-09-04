@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:redcap="https://projectredcap.org" xsi:schemaLocation="http://www.cdisc.org/ns/odm/v1.3 schema/odm/ODM1-3-1.xsd" ODMVersion="1.3.1" FileOID="000-00-0000" FileType="Snapshot" Description="GWEP Training Event Overview" AsOfDateTime="2018-09-04T12:29:50" CreationDateTime="2018-09-04T12:29:50" SourceSystem="REDCap" SourceSystemVersion="8.5.11">
+<Study OID="Project.GWEPTrainingEventOverview">
+<GlobalVariables>
+	<StudyName>GWEP Training Event Overview</StudyName>
+	<StudyDescription>This file contains the metadata, events, and data for REDCap project "GWEP Training Event Overview".</StudyDescription>
+	<ProtocolName>GWEP Training Event Overview</ProtocolName>
+	<redcap:RecordAutonumberingEnabled>1</redcap:RecordAutonumberingEnabled>
+	<redcap:CustomRecordLabel>([Event])</redcap:CustomRecordLabel>
+	<redcap:SecondaryUniqueField>event</redcap:SecondaryUniqueField>
+	<redcap:SchedulingEnabled>0</redcap:SchedulingEnabled>
+	<redcap:Purpose>3</redcap:Purpose>
+	<redcap:PurposeOther></redcap:PurposeOther>
+	<redcap:ProjectNotes></redcap:ProjectNotes>
+</GlobalVariables>
+<MetaDataVersion OID="Metadata.GWEPTrainingEventOverview_2018-09-04_1229" Name="GWEP Training Event Overview" redcap:RecordIdField="record_id">
+	<FormDef OID="Form.event_summary" Name="Event Summary" Repeating="No" redcap:FormName="event_summary">
+		<ItemGroupRef ItemGroupOID="event_summary.record_id" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="event_summary.event_summary_complete" Mandatory="No"/>
+	</FormDef>
+	<ItemGroupDef OID="event_summary.record_id" Name="Event Summary" Repeating="No">
+		<ItemRef ItemOID="record_id" Mandatory="No" redcap:Variable="record_id"/>
+		<ItemRef ItemOID="projectyear" Mandatory="No" redcap:Variable="projectyear"/>
+		<ItemRef ItemOID="hrsaprogram" Mandatory="No" redcap:Variable="hrsaprogram"/>
+		<ItemRef ItemOID="event" Mandatory="No" redcap:Variable="event"/>
+		<ItemRef ItemOID="coursetitle" Mandatory="No" redcap:Variable="coursetitle"/>
+		<ItemRef ItemOID="coursetitleother" Mandatory="No" redcap:Variable="coursetitleother"/>
+		<ItemRef ItemOID="evaluationstatus" Mandatory="No" redcap:Variable="evaluationstatus"/>
+		<ItemRef ItemOID="eventdate" Mandatory="No" redcap:Variable="eventdate"/>
+		<ItemRef ItemOID="attendeecnt" Mandatory="No" redcap:Variable="attendeecnt"/>
+		<ItemRef ItemOID="evaluationcnt" Mandatory="No" redcap:Variable="evaluationcnt"/>
+		<ItemRef ItemOID="audiencetype" Mandatory="No" redcap:Variable="audiencetype"/>
+		<ItemRef ItemOID="objective" Mandatory="No" redcap:Variable="objective"/>
+		<ItemRef ItemOID="key___1" Mandatory="No" redcap:Variable="key"/>
+		<ItemRef ItemOID="key___2" Mandatory="No" redcap:Variable="key"/>
+		<ItemRef ItemOID="key___3" Mandatory="No" redcap:Variable="key"/>
+		<ItemRef ItemOID="key___4" Mandatory="No" redcap:Variable="key"/>
+		<ItemRef ItemOID="key___5" Mandatory="No" redcap:Variable="key"/>
+		<ItemRef ItemOID="key____2" Mandatory="No" redcap:Variable="key"/>
+		<ItemRef ItemOID="keyother" Mandatory="No" redcap:Variable="keyother"/>
+		<ItemRef ItemOID="totalkeys" Mandatory="No" redcap:Variable="totalkeys"/>
+		<ItemRef ItemOID="originaldatasource" Mandatory="No" redcap:Variable="originaldatasource"/>
+		<ItemRef ItemOID="hasorphandata" Mandatory="No" redcap:Variable="hasorphandata"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="event_summary.event_summary_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="event_summary_complete" Mandatory="No" redcap:Variable="event_summary_complete"/>
+	</ItemGroupDef>
+	<ItemDef OID="record_id" Name="record_id" DataType="integer" Length="999" redcap:Variable="record_id" redcap:FieldType="text" redcap:TextValidationType="int">
+		<Question><TranslatedText>Record ID</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="projectyear" Name="projectyear" DataType="text" Length="1" redcap:Variable="projectyear" redcap:FieldType="select" redcap:FieldNote="Year 1: July 1 2015 - June 30 2016&lt;br&gt;Year 2: July 1 2016- June 30 2017 &lt;br&gt;Year 3: July 1 2017 - June 30 2018 &lt;br&gt;Year 4: July 1, 2018 - June 30, 2019" redcap:FieldAnnotation="@default=2">
+		<Question><TranslatedText>Year</TranslatedText></Question>
+		<CodeListRef CodeListOID="projectyear.choices"/>
+	</ItemDef>
+	<ItemDef OID="hrsaprogram" Name="hrsaprogram" DataType="text" Length="1" redcap:Variable="hrsaprogram" redcap:FieldType="select">
+		<Question><TranslatedText>HRSA Identified Program</TranslatedText></Question>
+		<CodeListRef CodeListOID="hrsaprogram.choices"/>
+	</ItemDef>
+	<ItemDef OID="event" Name="event" DataType="text" Length="999" redcap:Variable="event" redcap:FieldType="text" redcap:FieldNote="In format &quot;YYYY-MM-DD Event Name&quot;.  Must match exactly the event titles used in the Training Evaluation system.">
+		<Question><TranslatedText>Event</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="coursetitle" Name="coursetitle" DataType="text" Length="3" redcap:Variable="coursetitle" redcap:FieldType="select">
+		<Question><TranslatedText>Course Title</TranslatedText></Question>
+		<CodeListRef CodeListOID="coursetitle.choices"/>
+	</ItemDef>
+	<ItemDef OID="coursetitleother" Name="coursetitleother" DataType="text" Length="999" redcap:Variable="coursetitleother" redcap:FieldType="text" redcap:BranchingLogic="[coursetitle]=-2">
+		<Question><TranslatedText>Other course title</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="evaluationstatus" Name="evaluationstatus" DataType="text" Length="1" redcap:Variable="evaluationstatus" redcap:FieldType="select" redcap:FieldAnnotation="@default=1">
+		<Question><TranslatedText>Evaluation Status</TranslatedText></Question>
+		<CodeListRef CodeListOID="evaluationstatus.choices"/>
+	</ItemDef>
+	<ItemDef OID="eventdate" Name="eventdate" DataType="date" Length="999" redcap:Variable="eventdate" redcap:FieldType="text" redcap:TextValidationType="date_mdy">
+		<Question><TranslatedText>Date</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="attendeecnt" Name="attendeecnt" DataType="integer" Length="999" redcap:Variable="attendeecnt" redcap:FieldType="text" redcap:TextValidationType="int">
+		<Question><TranslatedText>Total Number of Attendees</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="evaluationcnt" Name="evaluationcnt" DataType="integer" Length="999" redcap:Variable="evaluationcnt" redcap:FieldType="text" redcap:TextValidationType="int" redcap:FieldNote="Number of evaluations collected">
+		<Question><TranslatedText>Total Number of Evaluations</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="audiencetype" Name="audiencetype" DataType="text" Length="3" redcap:Variable="audiencetype" redcap:FieldType="select">
+		<Question><TranslatedText>Audience Type</TranslatedText></Question>
+		<CodeListRef CodeListOID="audiencetype.choices"/>
+	</ItemDef>
+	<ItemDef OID="objective" Name="objective" DataType="text" Length="999" redcap:Variable="objective" redcap:FieldType="text">
+		<Question><TranslatedText>Objective  #</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="key___1" Name="key___1" DataType="boolean" Length="1" redcap:Variable="key" redcap:FieldType="checkbox">
+		<Question><TranslatedText>Key(s)</TranslatedText></Question>
+		<CodeListRef CodeListOID="key___1.choices"/>
+	</ItemDef>
+	<ItemDef OID="key___2" Name="key___2" DataType="boolean" Length="1" redcap:Variable="key" redcap:FieldType="checkbox">
+		<Question><TranslatedText>Key(s)</TranslatedText></Question>
+		<CodeListRef CodeListOID="key___2.choices"/>
+	</ItemDef>
+	<ItemDef OID="key___3" Name="key___3" DataType="boolean" Length="1" redcap:Variable="key" redcap:FieldType="checkbox">
+		<Question><TranslatedText>Key(s)</TranslatedText></Question>
+		<CodeListRef CodeListOID="key___3.choices"/>
+	</ItemDef>
+	<ItemDef OID="key___4" Name="key___4" DataType="boolean" Length="1" redcap:Variable="key" redcap:FieldType="checkbox">
+		<Question><TranslatedText>Key(s)</TranslatedText></Question>
+		<CodeListRef CodeListOID="key___4.choices"/>
+	</ItemDef>
+	<ItemDef OID="key___5" Name="key___5" DataType="boolean" Length="1" redcap:Variable="key" redcap:FieldType="checkbox">
+		<Question><TranslatedText>Key(s)</TranslatedText></Question>
+		<CodeListRef CodeListOID="key___5.choices"/>
+	</ItemDef>
+	<ItemDef OID="key____2" Name="key____2" DataType="boolean" Length="1" redcap:Variable="key" redcap:FieldType="checkbox">
+		<Question><TranslatedText>Key(s)</TranslatedText></Question>
+		<CodeListRef CodeListOID="key____2.choices"/>
+	</ItemDef>
+	<ItemDef OID="keyother" Name="keyother" DataType="text" Length="999" redcap:Variable="keyother" redcap:FieldType="text" redcap:FieldNote="i.e. &quot;Grand Rounds&quot;, &quot;Case Conferences&quot;, etc.">
+		<Question><TranslatedText>Describe the &quot;other&quot; presentation/training type</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="totalkeys" Name="totalkeys" DataType="integer" Length="999" redcap:Variable="totalkeys" redcap:FieldType="text" redcap:TextValidationType="int">
+		<Question><TranslatedText>Total Keys</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="originaldatasource" Name="originaldatasource" DataType="text" Length="1" redcap:Variable="originaldatasource" redcap:FieldType="select" redcap:FieldAnnotation="@HIDDEN,@DEFAULT=1">
+		<Question><TranslatedText>Original Data Source</TranslatedText></Question>
+		<CodeListRef CodeListOID="originaldatasource.choices"/>
+	</ItemDef>
+	<ItemDef OID="hasorphandata" Name="hasorphandata" DataType="text" Length="1" redcap:Variable="hasorphandata" redcap:FieldType="select" redcap:FieldAnnotation="@HIDDEN,@DEFAULT=0">
+		<Question><TranslatedText>Was evaluation data collected separately from demographics data in a way that prevents the two sets of data from being joined?</TranslatedText></Question>
+		<CodeListRef CodeListOID="hasorphandata.choices"/>
+	</ItemDef>
+	<ItemDef OID="event_summary_complete" Name="event_summary_complete" DataType="text" Length="1" redcap:Variable="event_summary_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="event_summary_complete.choices"/>
+	</ItemDef>
+	<CodeList OID="projectyear.choices" Name="projectyear" DataType="text" redcap:Variable="projectyear">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Year 1</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Year 2</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>Year 3</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="4"><Decode><TranslatedText>Year 4</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="hrsaprogram.choices" Name="hrsaprogram" DataType="text" redcap:Variable="hrsaprogram">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Practicum</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Continuing Ed</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>Faculty Dev</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="4"><Decode><TranslatedText>Fellowship</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="coursetitle.choices" Name="coursetitle" DataType="text" redcap:Variable="coursetitle">
+		<CodeListItem CodedValue="-2"><Decode><TranslatedText>Other/Not Listed</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="10"><Decode><TranslatedText>Activity and Mobility for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="20"><Decode><TranslatedText>Cognition for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="30"><Decode><TranslatedText>Cognition for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="40"><Decode><TranslatedText>Comprehensive Advance Care Planning</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="50"><Decode><TranslatedText>Comprehensive Advance Care Planning for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="60"><Decode><TranslatedText>Comprehensive Advance Care Planning for Direct Care Workers</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="70"><Decode><TranslatedText>Comprehensive Advance Care Planning for EdPACT</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="80"><Decode><TranslatedText>Comprehensive Advance Care Planning for R2/R3</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="90"><Decode><TranslatedText>Comprehensive Advance Care Planning for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="100"><Decode><TranslatedText>Confusion for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="110"><Decode><TranslatedText>Crisis Intervention Training</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="120"><Decode><TranslatedText>Delirium for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="130"><Decode><TranslatedText>Dementia Behavior Management for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="140"><Decode><TranslatedText>Dementia Behavior Management for Direct Care Workers</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="150"><Decode><TranslatedText>Dementia Overview for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="160"><Decode><TranslatedText>Dementia Overview for Direct Care Workers</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="170"><Decode><TranslatedText>Dementia Overview for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="180"><Decode><TranslatedText>Dementia Screening and Management for DAAS</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="190"><Decode><TranslatedText>Dementia Training for Navigators</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="200"><Decode><TranslatedText>Depression for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="210"><Decode><TranslatedText>EdPACT Advance Care Planning</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="220"><Decode><TranslatedText>EdPACT Behaviors/Dementia</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="230"><Decode><TranslatedText>EdPACT Hospice and Palliative Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="240"><Decode><TranslatedText>EdPACT Legal Resources</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="250"><Decode><TranslatedText>Elder Abuse for R2/R3</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="260"><Decode><TranslatedText>Fellows - Core - Symptoms Management</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="270"><Decode><TranslatedText>Goal Setting and Decision Making for Direct Care Workers</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="280"><Decode><TranslatedText>Goal Setting and Decision Making for R2/R3</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="290"><Decode><TranslatedText>Grief for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="300"><Decode><TranslatedText>Health Promotion for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="310"><Decode><TranslatedText>Health Promotion for Faculty</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="320"><Decode><TranslatedText>Health Promotion for R2/R3</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="330"><Decode><TranslatedText>Health Promotion for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="340"><Decode><TranslatedText>Hoarding for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="350"><Decode><TranslatedText>Independence for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="360"><Decode><TranslatedText>LGBT Health for Faculty</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="370"><Decode><TranslatedText>LGBT Health for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="380"><Decode><TranslatedText>Loneliness for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="390"><Decode><TranslatedText>Loneliness for Direct Care Workers</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="400"><Decode><TranslatedText>Loneliness for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="410"><Decode><TranslatedText>Managing Difficult Conversations</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="420"><Decode><TranslatedText>Medicare Annual Wellness Didactic Training</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="430"><Decode><TranslatedText>Medicare Annual Wellness Visit Training</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="440"><Decode><TranslatedText>Medication Management for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="450"><Decode><TranslatedText>Mental Health for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="460"><Decode><TranslatedText>Mental Health for Direct Care Workers</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="470"><Decode><TranslatedText>Mental Health for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="480"><Decode><TranslatedText>Neuropathy for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="490"><Decode><TranslatedText>Older Adult Case Conference</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="500"><Decode><TranslatedText>Older Adult Case Conference for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="510"><Decode><TranslatedText>Paranoia for Safety Net Primary Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="520"><Decode><TranslatedText>Prognosis for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="530"><Decode><TranslatedText>Program Management for Faculty</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="540"><Decode><TranslatedText>R2/R3 - Dementia Didactics</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="550"><Decode><TranslatedText>Safety for Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="560"><Decode><TranslatedText>Safety for Direct Care Workers</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="570"><Decode><TranslatedText>Sex for Direct Care Workers</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="580"><Decode><TranslatedText>Sleep for Community</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="evaluationstatus.choices" Name="evaluationstatus" DataType="text" redcap:Variable="evaluationstatus">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Evaluated</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Demographics Only</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>Demographics and Quality</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="4"><Decode><TranslatedText>Brie</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="5"><Decode><TranslatedText>Qualtrics</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="6"><Decode><TranslatedText>Evaluated - TBD</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>None</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="audiencetype.choices" Name="audiencetype" DataType="text" redcap:Variable="audiencetype">
+		<CodeListItem CodedValue="10"><Decode><TranslatedText>DAAS-ADRC</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="20"><Decode><TranslatedText>DAAS-Quarterly</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="30"><Decode><TranslatedText>DAAS-Staff</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="35"><Decode><TranslatedText>DAAS-Contractor</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="40"><Decode><TranslatedText>First Responders-SFPD</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="50"><Decode><TranslatedText>External-DSPs</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="60"><Decode><TranslatedText>LBFE-Volunteers/Staff</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="70"><Decode><TranslatedText>SF-Community</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="80"><Decode><TranslatedText>SFHN-DSPs</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="90"><Decode><TranslatedText>SFHN-DSPs-Case Conference</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="100"><Decode><TranslatedText>SFHN-Residents</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="110"><Decode><TranslatedText>TBD</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="120"><Decode><TranslatedText>UCSF/SFVAMC-Case Rounds</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="130"><Decode><TranslatedText>UCSF/SFVAMC-Conference</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="140"><Decode><TranslatedText>UCSF/SFVAMC-Core</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="150"><Decode><TranslatedText>UCSF/SFVAMC-EdPACT</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="160"><Decode><TranslatedText>UCSF/SFVAMC-R2/R3</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="170"><Decode><TranslatedText>UCSF-Admin</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="180"><Decode><TranslatedText>UCSF-AWV</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="190"><Decode><TranslatedText>UCSF-Faculty</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="200"><Decode><TranslatedText>UCSF-Home Care</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="205"><Decode><TranslatedText>UCSF-Nursing Students</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="-2"><Decode><TranslatedText>Other</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="key___1.choices" Name="key___1" DataType="boolean" redcap:Variable="key" redcap:CheckboxChoices="1,Cognition|2,Independence|3,Safety|4,Goals and Decisions|5,Mental Health|-2,Other (Grand Rounds, Case Conference, etc.)">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="key___2.choices" Name="key___2" DataType="boolean" redcap:Variable="key" redcap:CheckboxChoices="1,Cognition|2,Independence|3,Safety|4,Goals and Decisions|5,Mental Health|-2,Other (Grand Rounds, Case Conference, etc.)">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="key___3.choices" Name="key___3" DataType="boolean" redcap:Variable="key" redcap:CheckboxChoices="1,Cognition|2,Independence|3,Safety|4,Goals and Decisions|5,Mental Health|-2,Other (Grand Rounds, Case Conference, etc.)">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="key___4.choices" Name="key___4" DataType="boolean" redcap:Variable="key" redcap:CheckboxChoices="1,Cognition|2,Independence|3,Safety|4,Goals and Decisions|5,Mental Health|-2,Other (Grand Rounds, Case Conference, etc.)">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="key___5.choices" Name="key___5" DataType="boolean" redcap:Variable="key" redcap:CheckboxChoices="1,Cognition|2,Independence|3,Safety|4,Goals and Decisions|5,Mental Health|-2,Other (Grand Rounds, Case Conference, etc.)">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="key____2.choices" Name="key____2" DataType="boolean" redcap:Variable="key" redcap:CheckboxChoices="1,Cognition|2,Independence|3,Safety|4,Goals and Decisions|5,Mental Health|-2,Other (Grand Rounds, Case Conference, etc.)">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Checked</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Unchecked</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="originaldatasource.choices" Name="originaldatasource" DataType="text" redcap:Variable="originaldatasource">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Online Entry</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Year 1 Event Data Spreadsheet</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Year 1 Event Data Spreadsheet</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>Qualtrics data import</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="4"><Decode><TranslatedText>Other extramural data import</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="hasorphandata.choices" Name="hasorphandata" DataType="text" redcap:Variable="hasorphandata">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Yes</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>No</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="event_summary_complete.choices" Name="event_summary_complete" DataType="text" redcap:Variable="event_summary_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+</MetaDataVersion>
+</Study>
+</ODM>

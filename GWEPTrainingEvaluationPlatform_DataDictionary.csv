@@ -1,0 +1,199 @@
+"Variable / Field Name","Form Name","Section Header","Field Type","Field Label","Choices, Calculations, OR Slider Labels","Field Note","Text Validation Type OR Show Slider Number","Text Validation Min","Text Validation Max",Identifier?,"Branching Logic (Show field only if...)","Required Field?","Custom Alignment","Question Number (surveys only)","Matrix Group Name","Matrix Ranking?","Field Annotation"
+record_id,participant_registration,,text,"Record ID",,,,,,,,,,,,,@HIDDEN
+event,participant_registration,,text,"Event Name",,,,,,,,,,,,,
+auto_trainingdate,participant_registration,,text,"Auto Training Date",,,date_dmy,,,,,,,,,,@HIDDEN
+ishrsafunded,participant_registration,,yesno,"Is this trainee funded through the HRSA GWEP grant?",,,,,,,,,,,,,@HIDDEN
+isresident,participant_registration,,yesno,"Is this trainee a resident?",,,,,,,,,,,,,@HIDDEN
+istest,participant_registration,,yesno,"Is this record a test record?",,,,,,,,,,,,,@HIDDEN
+suppressdate,participant_registration,,yesno,"Suppress training date?",,,,,,,,,,,,,@HIDDEN
+suppressorg,participant_registration,,yesno,"Suppress organization prompts?",,,,,,,,,,,,,@HIDDEN
+suppressrole,participant_registration,,yesno,"Suppress role prompts?",,,,,,,,,,,,,@HIDDEN
+suppresssfhn,participant_registration,,yesno,"Suppress SFHN prompts?",,,,,,,,,,,,,@HIDDEN
+suppresseducation,participant_registration,,yesno,"Suppress education prompts?",,,,,,,,,,,,,@HIDDEN
+suppressdemographics,participant_registration,,yesno,"Suppress demographic prompts?",,,,,,,,,,,,,@HIDDEN
+suppressbackground,participant_registration,,yesno,"Suppress background prompts?",,,,,,,,,,,,,@HIDDEN
+suppresscaretype,participant_registration,,yesno,"Suppress caretype prompts?",,,,,,,,,,,,,@HIDDEN
+suppresspracticechanges,participant_registration,,yesno,"Suppress Practice Change section?",,,,,,,,,,,,,@HIDDEN
+suppressimmediatepost,participant_registration,,yesno,"Suppress entire Immediate Post section?",,,,,,,,,,,,,@HIDDEN
+key,participant_registration,,checkbox,"5 Keys Applicable To This Training","0,General|1,Cognition|2,Independence|3,Safety|4,Individualized goal-setting|5,Mental Health",,,,,,,,,,,,@HIDDEN
+kag4,participant_registration,,yesno,"Roles of different disciplines in Interprofessional team care planning",,,,,,,,,,,,,@HIDDEN
+kag2,participant_registration,,yesno,"Non-medication approaches for dementia-associated behaviors",,,,,,,,,,,,,@HIDDEN
+kag3,participant_registration,,yesno,"Problematic medications and drug interactions in older adults ",,,,,,,,,,,,,@HIDDEN
+kas2,participant_registration,,yesno,"Using cognitive screening tools ",,,,,,,,,,,,,@HIDDEN
+kac1,participant_registration,,yesno,"How to distinguish between capacity and competency ",,,,,,,,,,,,,@HIDDEN
+kas1,participant_registration,,yesno,"How to assess activities of daily living (ADLs) and instrumental activities of daily living (IADLs)",,,,,,,,,,,,,@HIDDEN
+kas5,participant_registration,,yesno,"Screening for sensory impairment",,,,,,,,,,,,,@HIDDEN
+kai2,participant_registration,,yesno,"How to implement appropriate interventions for all types of impairment (e.g., sensory, functional, etc.)",,,,,,,,,,,,,@HIDDEN
+kas7,participant_registration,,yesno,"How to recognize elder abuse (e.g, red flags for physical, psychological and financial abuse, as well as self-neglect)",,,,,,,,,,,,,@HIDDEN
+kai3,participant_registration,,yesno,"How to implement appropriate interventions to reduce fall risk",,,,,,,,,,,,,@HIDDEN
+kai6,participant_registration,,yesno,"How to report elder abuse or self-neglect",,,,,,,,,,,,,@HIDDEN
+kag1,participant_registration,,yesno,"Scope of care models for older adults, such as in-home care and residential long-term care, and how they are funded",,,,,,,,,,,,,@HIDDEN
+kag5,participant_registration,,yesno,"When to utilize emergency services",,,,,,,,,,,,,@HIDDEN
+kai4,participant_registration,,yesno,"How to engage older adults and/or their surrogates in self-management and care priorities ",,,,,,,,,,,,,@HIDDEN
+kai5,participant_registration,,yesno,"How to engage older adults and/or their surrogates in advance care planning",,,,,,,,,,,,,@HIDDEN
+kac2,participant_registration,,yesno,"Using prognostication tools ",,,,,,,,,,,,,@HIDDEN
+kac3,participant_registration,,yesno,"How to promote age- and prognosis-appropriate preventive care",,,,,,,,,,,,,@HIDDEN
+kas3,participant_registration,,yesno,"Screening for social isolation",,,,,,,,,,,,,@HIDDEN
+kas4,participant_registration,,yesno,"Screening for common mental health disorders such as depression, anxiety, etc.",,,,,,,,,,,,,@HIDDEN
+kas6,participant_registration,,yesno,"How to recognize caregiver burnout (e.g., red flags)",,,,,,,,,,,,,@HIDDEN
+kai1,participant_registration,,yesno,"How to address substance and alcohol abuse",,,,,,,,,,,,,@HIDDEN
+kai7,participant_registration,,yesno,"Providing guidance and community referrals to caregivers of adults ",,,,,,,,,,,,,@HIDDEN
+kai8,participant_registration,,yesno,"Providing guidance and community referrals for mental health evaluation and treatment",,,,,,,,,,,,,@HIDDEN
+perall,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+per1,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+per2,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+per3,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+per4,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+per5,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+per6,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+per7,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+per8,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+per9,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+prac1,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+prac2,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+prac3,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+prac4,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+prac5,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+prac6,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+prac7,participant_registration,,yesno,,,,,,,,,,,,,,@HIDDEN
+pr_email,participant_registration,,text,"Email address:",,,email,,,,,,LH,,,,
+pr_declinedemail,participant_registration,,checkbox,"Check this box if you decline to provide your email for these purposes.  You will be prompted to generate an alternate unique ID which we will use to store your responses.","1,I decline to provide my email",,,,,,,,,,,,
+pr_useridtexttop,participant_registration,"User ID",descriptive,"Create your unique user ID number using the month of your birth, the day of your birth, the first two letters of your first name, and the first two letters of your last name.  This information is only used to enable us to organize your results -- it is not used to identify you.",,,,,,,[pr_declinedemail(1)]=1,,,,,,
+pr_useridmonth,participant_registration,,text,"Birth Month",,mm,integer,1,12,,[pr_declinedemail(1)]=1,,,,,,
+pr_useridday,participant_registration,,text,"Birth Day",,dd,integer,1,31,,[pr_declinedemail(1)]=1,,,,,,
+pr_useridfirstletters,participant_registration,,text,"First two letters of your First Name ",,"First two letters only",,,,,[pr_declinedemail(1)]=1,,,,,,
+pr_useridlastletters,participant_registration,,text,"First two letters of your Last Name ",,"First two letters only",,,,,[pr_declinedemail(1)]=1,,,,,,
+pr_useridtextend,participant_registration,,descriptive,"For example if you are Vicki Phillips born on January 23, your user id will be: 0123VIPH",,,,,,,[pr_declinedemail(1)]=1,,,,,,
+auto_agency,participant_registration,Agency/Program,checkbox,"For which Agency or Program are you taking this survey?","1, Aging and Disability Resource Center (ADRC) | 2, Alzheimer's Association | 3, DAAS | 4, Homebridge | 5, Little Brothers Friends of the Elderly | 6, Openhouse | 7, SF Veterans' Affairs Medical Center/EDPACT | 8, SF Health Network/SFGH | 9, UCSF Medical Center | -2, Other (specify below)",,,,,,,,,,,,@HIDDEN
+auto_agencyother,participant_registration,,text,"What ""Other"" agency or program are you taking this survey for?",,,,,,,[auto_agency(-2)]=1,,,,,,@HIDDEN
+auto_agencyadrc,participant_registration,,text,"What is the ADRC Site Name?",,,,,,,[auto_agency(1)]=1,,,,,,@HIDDEN
+auto_agencydaas,participant_registration,,checkbox,"What is your DAAS site/service area?","1, Administration|2, APS|3, Intake|4, IHSS|-2, Other",,,,,,[auto_agency(3)]=1,,,,,,@HIDDEN
+auto_agencydaasother,participant_registration,,text,"What is the ""Other? DAAS agency or program for which you are taking this survey?",,,,,,,[auto_agencydaas(-2)]=1,,,,,,@HIDDEN
+auto_agencysfhnaffiliation,participant_registration,,checkbox,"At SFHN/SFGH, what is your organizational affiliation regarding UCSF?","1,DPH/Non-UCSF|2,UCSF DGIM|3,UCSF FM",,,,,,[auto_agency(8)]=1,,,,,,@HIDDEN
+auto_agencyucsf,participant_registration,,checkbox,"What is your USCF Medical Center affiliation (if applicable)?","1, Care At Home | 3, School of Medicine | 4, School of Nursing",,,,,,[auto_agency(9)]=1,,,,,,"@HIDDEN ; Choice (2,DGIM) has been deprecated"
+auto_role,participant_registration,"Profession Types",checkbox,"What is your role with this agency? (Choose all that apply.)","1,Behavioral Health/Social Work|2,Medicine|3,Nursing|-2,Other",,,,,,,,,,,,@HIDDEN
+auto_rolebehavioral,participant_registration,,checkbox,"What type of Behavioral Health/Social Work do you provide for this agency?","1, Clinical Psychology | 2, Clinical Social Work | 3, Other - Psychology | 4, Other - Social Work, Addictions Counseling",,,,,,[auto_role(1)]=1,,,,,,@HIDDEN
+auto_rolemedicine,participant_registration,,checkbox,"What type of Medicine do you provide for this agency?","1, Internal/ Family Medicine|2, Psychiatry|-2, Other (specify):",,,,,,[auto_role(2)]=1,,,,,,@HIDDEN
+auto_rolemedicineother,participant_registration,,text,"What is the ""Other"" area of Medicine listed above?",,,,,,,[auto_rolemedicine(-2)]=1,,,,,,@HIDDEN
+auto_rolenursing,participant_registration,,checkbox,"What type of nursing do you provide for this agency?","1,Clinical Nurse Specialist (CNS)|2,Licensed Practical/Vocational Nurse (LPN/LVN)|3,Nurse Assistant/Patient Care Associate (PCA)|4,Nurse Practitioner (NP)|5,Public Health Nurse |6,Registered Nurse|-2,Other (specify):",,,,,,[auto_role(3)]=1,,,,,,@HIDDEN
+auto_rolenursingcns,participant_registration,,checkbox,"What specialty area(s) of Clinical Nurse Specialist (CNS) do you serve?","1,Adult Gerontology|2,Psychiatric/Mental Health|-2,Other (specify)",,,,,,[auto_rolenursing(1)]=1,,,,,,@HIDDEN
+auto_rolenursingcnsother,participant_registration,,text,"What is the ""Other"" Clinical Nurse Specialty listed above?",,,,,,,[auto_rolenursingcns(-2)]=1,,,,,,@HIDDEN
+auto_rolenursingnp,participant_registration,,checkbox,"What specialty area(s) of Nurse Practitioner (NP) do you serve?","1,Adult|2,Adult Gerontology|3,Family|4,Psychiatric/Mental Health|-2,Other (specify)",,,,,,[auto_rolenursing(4)]=1,,,,,,@HIDDEN
+auto_rolenursingnppother,participant_registration,,text,"What other specialty area of Nurse Practitioner do you serve?",,,,,,,[auto_rolenursingnp(-2)]=1,,,,,,@HIDDEN
+auto_rolenursingother,participant_registration,,text,"What is the ""Other"" area of Nursing listed above?",,,,,,,[auto_rolenursing(-2)]=1,,,,,,@HIDDEN
+auto_roleother,participant_registration,,checkbox,"What is the ""Other"" role you provide with the agency listed above?","8, Lay/Family/Volunteer Caregiver | 1, Administration | 2, First Responder | 3, Pharmacy | 4, Physician Assistant (PA) | 5, PT/OT | 6, Social Services | -2, Other (specify)",,,,,,[auto_role(-2)]=1,,,,,,"@HIDDEN ; changed ""Little Brothers - Friends of the Elderly Volunteer"" to"
+auto_rolefirstresponder,participant_registration,,checkbox,"What is the ""First Responder"" role listed above?","1,EMT|2,Fire|3,Paramedic|4,Police|5,Sheriff",,,,,,[auto_roleother(2)]=1,,,,,,@HIDDEN
+auto_roleotherdesc,participant_registration,,text,"What is the ""Other"" role with this agency listed above?",,,,,,,[auto_roleother(-2)]=1,,,,,,@HIDDEN
+auto_ucsfeducationstatus,participant_registration,Education,checkbox,"If you are enrolled in a UCSF  program, what is your Education Status?","1, Student | 2, Resident | 3, Fellow | 4, Faculty",,,,,,,,,,,,@HIDDEN
+auto_agencysfhn,participant_registration,"San Francisco Health Network ",checkbox,"If you are taking this survey for the SF Health Network, at which clinic(s) do you regularly work?","1,Castro-Mission Health Center|2,Chinatown Public Health Center|3,Curry Senior Center|4,Family Health Center|5,General Medical Clinic|6,Maxine Hall Health Center|7,Ocean Park Health Center|8,Positive Health Program|9,Potrero Hill Health Center|10,Silver Avenue Family Health Center|11,Southeast Health Center|12,Tom Waddell Urban Health Center|-1,Does not apply",,,,,,,,,,,,@HIDDEN
+pr_agency,participant_registration,Agency/Program,checkbox,"For which Agency or Program are you taking this survey?","1, Aging and Disability Resource Center (ADRC) | 2, Alzheimer's Association | 3, DAAS | 4, Homebridge | 5, Little Brothers - Friends of the Elderly | 6, Openhouse | 7, SF Veterans' Affairs Medical Center/EDPACT | 8, SF Health Network/SFGH | 9, UCSF Medical Center | -2, Other (specify below)",,,,,,[suppressorg]<>1,,,,,,
+pr_agencyother,participant_registration,,text,"What ""Other"" agency or program are you taking this survey for?",,,,,,,"[suppressorg]<>1 AND [pr_agency(-2)]=1",,,,,,
+pr_agencyadrc,participant_registration,,text,"What is the ADRC Site Name?",,,,,,,"[suppressorg]<>1 AND [pr_agency(1)]=1",,,,,,
+pr_agencydaas,participant_registration,,checkbox,"What is your DAAS site/service area?","1, Administration|2, APS|3, Intake|4, IHSS|-2, Other",,,,,,"[suppressorg]<>1 AND [pr_agency(3)]=1",,,,,,
+pr_agencydaasother,participant_registration,,text,"What is the ""Other? DAAS agency or program for which you are taking this survey?",,,,,,,"[suppressorg]<>1 AND [pr_agencydaas(-2)]=1",,,,,,
+pr_agencysfhnaffiliation,participant_registration,,checkbox,"At SFHN/SFGH, what is your organizational affiliation regarding UCSF?","1,DPH/Non-UCSF|2,UCSF DGIM|3,UCSF FM",,,,,,"[suppressorg]<>1 AND [pr_agency(8)]=1",,,,,,
+pr_agencyucsf,participant_registration,,checkbox,"What is your USCF Medical Center affiliation (if applicable)?","1, Care At Home | 3, School of Medicine | 4, School of Nursing",,,,,,"[suppressorg]<>1 AND [pr_agency(9)]=1",,,,,,"@HIDDEN ; Choice (2,DGIM) has been deprecated"
+pr_role,participant_registration,"Profession Types",checkbox,"What is your role with this agency? (Choose all that apply.)","1,Behavioral Health/Social Work|2,Medicine|3,Nursing|-2,Other",,,,,,[suppressrole]<>1,,,,,,
+pr_rolebehavioral,participant_registration,,checkbox,"What type of Behavioral Health/Social Work do you provide for this agency?","1, Clinical Psychology | 2, Clinical Social Work | 3, Other - Psychology | 4, Other - Social Work, Addictions Counseling",,,,,,"[suppressrole]<>1 AND [pr_role(1)]=1",,,,,,
+pr_rolemedicine,participant_registration,,checkbox,"What type of Medicine do you provide for this agency?","1, Internal/ Family Medicine|2, Psychiatry|-2, Other (specify):",,,,,,"[suppressrole]<>1 AND [pr_role(2)]=1",,,,,,
+pr_rolemedicineother,participant_registration,,text,"What is the ""Other"" area of Medicine listed above?",,,,,,,"[suppressrole]<>1 AND [pr_rolemedicine(-2)]=1",,,,,,
+pr_rolenursing,participant_registration,,checkbox,"What type of nursing do you provide for this agency?","1,Clinical Nurse Specialist (CNS)|2,Licensed Practical/Vocational Nurse (LPN/LVN)|3,Nurse Assistant/Patient Care Associate (PCA)|4,Nurse Practitioner (NP)|5,Public Health Nurse |6,Registered Nurse|-2,Other (specify):",,,,,,"[suppressrole]<>1 AND [pr_role(3)]=1",,,,,,
+pr_rolenursingcns,participant_registration,,checkbox,"What specialty area(s) of Clinical Nurse Specialist (CNS) do you serve?","1,Adult Gerontology|2,Psychiatric/Mental Health|-2,Other (specify)",,,,,,"[suppressrole]<>1 AND [pr_rolenursing(1)]=1",,,,,,
+pr_rolenursingcnsother,participant_registration,,text,"What is the ""Other"" Clinical Nurse Specialty listed above?",,,,,,,"[suppressrole]<>1 AND [pr_rolenursingcns(-2)]=1",,,,,,
+pr_rolenursingnp,participant_registration,,checkbox,"What specialty area(s) of Nurse Practitioner (NP) do you serve?","1,Adult|2,Adult Gerontology|3,Family|4,Psychiatric/Mental Health|-2,Other (specify)",,,,,,"[suppressrole]<>1 AND [pr_rolenursing(4)]=1",,,,,,
+pr_rolenursingnppother,participant_registration,,text,"What other specialty area of Nurse Practitioner do you serve?",,,,,,,"[suppressrole]<>1 AND [pr_rolenursingnp(-2)]=1",,,,,,
+pr_rolenursingother,participant_registration,,text,"What is the ""Other"" area of Nursing listed above?",,,,,,,"[suppressrole]<>1 AND [pr_rolenursing(-2)]=1",,,,,,
+pr_roleother,participant_registration,,checkbox,"What is the ""Other"" role you provide with the agency listed above?","1, Administration | 2, First Responder | 8, Lay/Family/Volunteer Caregiver | 3, Pharmacy | 4, Physician Assistant (PA) | 5, PT/OT | 6, Social Services | -2, Other (specify)",,,,,,"[suppressrole]<>1 AND [pr_role(-2)]=1",,,,,,"Changed to ""Little Brothers/Friends of the Elderly Volunteed"" to ""Lay/Family/Volunteer Caregiver
+"""
+pr_rolefirstresponder,participant_registration,,checkbox,"What is the ""First Responder"" role listed above?","1,EMT|2,Fire|3,Paramedic|4,Police|5,Sheriff",,,,,,"[suppressrole]<>1 AND [pr_roleother(2)]=1",,,,,,
+pr_roleotherdesc,participant_registration,,text,"What is the ""Other"" role with this agency listed above?",,,,,,,"[suppressrole]<>1 AND [pr_roleother(-2)]=1",,,,,,
+pr_ucsfeducationstatus,participant_registration,Education,checkbox,"If you are enrolled in a UCSF  program, what is your Education Status?","1, Student | 2, Resident | 3, Fellow | 4, Faculty",,,,,,[suppresseducation]<>1,,,,,,
+pr_ucsfresidentyear,participant_registration,,radio,"What year are you within your education program at UCSF?","1,R1|2,R2|3,R3",,,,,,[pr_ucsfeducationstatus(2)]=1,,,,,,
+pr_agencysfhn,participant_registration,"San Francisco Health Network ",checkbox,"If you are taking this survey for the SF Health Network, at which clinic(s) do you regularly work?","1,Castro-Mission Health Center|2,Chinatown Public Health Center|3,Curry Senior Center|4,Family Health Center|5,General Medical Clinic|6,Maxine Hall Health Center|7,Ocean Park Health Center|8,Positive Health Program|9,Potrero Hill Health Center|10,Silver Avenue Family Health Center|11,Southeast Health Center|12,Tom Waddell Urban Health Center|-1,Does not apply",,,,,,[suppresssfhn]<>1,,,,,,
+pr_agerange,participant_registration,"Basic Demographics",radio,"What is your age range?","1,19 and Under|2,20 - 29 years|3,30 - 39 years|4,40 - 49 years|5,50 - 59 years|6,60 and Over",,,,,,[suppressdemographics]<>1,,,,,,"LR-2: Trainees by Age & Sex"
+pr_ethnicity,participant_registration,,yesno,"Are you of Hispanic, Latino/a, or Spanish origin?",,,,,,,[suppressdemographics]<>1,,,,,,
+pr_race,participant_registration,,checkbox,"What is your racial background? (select all that apply)","1,American Indian or Alaska Native|2,Asian|3,Black or African American|4,Native Hawaiian or Other Pacific Islander|5,White|-2,Other",,,,,,[suppressdemographics]<>1,,,,,,
+pr_gender,participant_registration,,radio,"What is your gender?","0,Female|1,Male|3,Transmale|4,Transfemale|5,Other",,,,,,[suppressdemographics]<>1,,,,,,
+pr_isdisadvantaged,participant_registration,Background,yesno,"Do you qualify as a trainee coming from a disadvantaged background (ie,  family with an annual income below established low-income thresholds or from a social, cultural, or educational environment such as that found in certain rural or inner-city environment)?",,,,,,,"[suppressbackground]<>1 AND [ishrsafunded]=1",,,,,,PC-1
+pr_isrural,participant_registration,,yesno,"Do you qualify as a trainee coming from a rural residential background?",,,,,,,"[suppressbackground]<>1 AND [ishrsafunded]=1",,,,,,PC-1
+pr_isveteran,participant_registration,,yesno,"Are you veteran of the US Armed Services?",,,,,,,"[suppressbackground]<>1 AND [ishrsafunded]=1",,,,,,"IND-GEN: Individual Characteristics"
+pr_bhwaward,participant_registration,,yesno,"Have you received a BHW Financial Award?",,,,,,,"[suppressbackground]<>1 AND [ishrsafunded]=1",,,,,,"IND-GEN: Individual Characteristics; need to understand whether we capture training setting info separately or should add here?"
+pr_caretypes,participant_registration,,radio,"Which of the following best describes the care services you provide to older adults? (check one)","1, Do not provide care to older adults | 2, Provide primary care to older adults | 3, Provide specialized care to older adults | 4, Provide specialized geriatric care | 5, Provide specialized geriatric care <u>and</u> education to other clinicians",,,,,,"[suppresscaretype]<>1 AND [isresident]=0",,,,,,
+pe_trainingdate,training_program_evaluation,"<B>TRAINING EVALUATION</B>",text,"Training Date",,,date_dmy,,,,[suppressdate]<>1,,,,,,
+pe_ratedesc,training_program_evaluation,,descriptive,"<p>Please rate each of the following items based on your experience in this session on a scale from 1 to 5.</p><p>(1 = Poor, 2 = Fair, 3 = Good, 4 = Very Good, 5 = Excellent)</p>",,,,,,,"([per1]=1 or [per2]=1 or [per3]=1 or [per4]=1 or [per5]=1 or [per6]=1 or [per7]=1) or [perall]=1",,,,,,
+pe_rateobjectives,training_program_evaluation,,radio,"Clarity of objectives","1,1|2,2|3,3|4,4|5,5|-1,N/A",,,,,,"[per1]=1 or [perall]=1",,LH,,,,
+pe_rateorganization,training_program_evaluation,,radio,"Organization of the session","1,1|2,2|3,3|4,4|5,5|-1,N/A",,,,,,"[per2]=1 or [perall]=1",,LH,,,,
+pe_rateactivities,training_program_evaluation,,radio,"Usefulness of activities / exercises during the session","1,1|2,2|3,3|4,4|5,5|-1,N/A",,,,,,"[per3]=1 or [perall]=1",,LH,,,,
+pe_ratediscussion,training_program_evaluation,,radio,"Usefulness of discussion during the session","1,1|2,2|3,3|4,4|5,5|-1,N/A",,,,,,"[per4]=1 or [perall]=1",,LH,,,,
+pe_ratewritten,training_program_evaluation,,radio,"Usefulness of written materials / handouts","1,1|2,2|3,3|4,4|5,5|-1,N/A",,,,,,"[per5]=1 or [perall]=1",,LH,,,,
+pe_raterelevance,training_program_evaluation,,radio,"Relevance of this session to my work","1,1|2,2|3,3|4,4|5,5|-1,N/A",,,,,,"[per6]=1 or [perall]=1",,LH,,,,
+pe_ratequality,training_program_evaluation,,radio,"Overall quality of the session","1,1|2,2|3,3|4,4|5,5|-1,N/A",,,,,,"[per7]=1 or [perall]=1",,LH,,,,
+pe_mostvaluable,training_program_evaluation,,notes,"What aspects of the session did you find most valuable?",,,,,,,"[per8]=1 or [perall]=1",,LH,,,,
+pe_improvement,training_program_evaluation,,notes,"How could the session be improved?  ",,,,,,,"[per9]=1 or [perall]=1",,LH,,,,
+ip_influence,training_program_evaluation,"<B>PRACTICE CHANGES</U>",descriptive,"<p>How much do you agree or disagree with the following statements?</p><p>(1 - Disagree strongly, 2 - Disagree, 3 - Neither agree nor disagree, 4 - Agree, 5 - Strongly agree)</p>",,,,,,,,,,,,,
+pe_willchange,training_program_evaluation,,radio,"It is likely that I will make changes in my clinical activities as a result of this session.","1,1|2,2|3,3|4,4|5,5",,,,,,"[prac1]=1 and [suppresspracticechanges]<>1",,LH,,,,
+ip_carewillimprove,training_program_evaluation,,radio,"My patient care will improve as a result of what I've learned.","1,1|2,2|3,3|4,4|5,5",,,,,,"[prac2]=1 and [suppresspracticechanges]<>1",,LH,,,,
+ip_careerplans,training_program_evaluation,,radio,"After completion of your current program at UCSF, I plan to pursue work in a geriatric care setting.","1,1|2,2|3,3|4,4|5,5",,,,,,"[prac3]=1 and [suppresspracticechanges]<>1",,LH,,,,
+ip_careerplanschanged,training_program_evaluation,,radio,"This training has made me <u>more likely</u> to pursue work in a geriatric care setting.","1,1|2,2|3,3|4,4|5,5",,,,,,"[prac4]=1 and [suppresspracticechanges]<>1",,LH,,,,
+pe_plannedchanges,training_program_evaluation,,notes,"Describe one thing you plan to do differently in your practice as a result of this seminar.",,,,,,,"[prac5]=1 and [suppresspracticechanges]<>1",,LH,,,,
+pe_plannedchangescog,training_program_evaluation,,notes,"With regard to evaluating or managing cognitive impairment, please write specifically how you intend to change your practice as a result of this training activity.",,,,,,,"[prac6]=1 and [suppresspracticechanges]<>1",,LH,,,,
+ip_knowledgebeforedesc,training_immediate_post,"<b>KNOWLEDGE BEFORE TRAINING</b>",descriptive,"<p>Now rate your knowledge <u>before</u> today's training of each of the following issues related to the care of older adults.</p><p>(1 = None, 2 = A Little, 3 = Adequate, 4 = Considerable, 5 = High)</p>",,,,,,,[suppressimmediatepost]<>1,,,,,,
+ip_knowledgegeriatric4pre,training_immediate_post,General,radio,"Roles of different disciplines in Interprofessional team care planning","1,1|2,2|3,3|4,4|5,5",,,,,,"[kag4]=1 OR  [key(0)]=1",,,,,,"KEY: General"
+ip_knowledgegeriatric2pre,training_immediate_post,Cognition,radio,"Non-medication approaches for dementia-associated behaviors","1,1|2,2|3,3|4,4|5,5",,,,,,"[kag2]=1 OR  [key(1)]=1",,LH,,,,"KEY: Cognition"
+ip_knowledgegeriatric3pre,training_immediate_post,,radio,"Problematic medications and drug interactions in older adults ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kag3]=1 OR  [key(1)]=1",,LH,,,,"KEY: Cognition"
+ip_knowledgescreening2pre,training_immediate_post,,radio,"Using cognitive screening tools ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas2]=1 OR  [key(1)]=1",,LH,,,,"KEY: Cognition"
+ip_knowledgeclinician1pre,training_immediate_post,,radio,"How to distinguish between capacity and competency ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kac1]=1 OR  [key(1)]=1",,LH,,,,"KEY: Cognition"
+ip_knowledgescreening1pre,training_immediate_post,Independence,radio,"How to assess activities of daily living (ADLs) and instrumental activities of daily living (IADLs)","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas1]=1 OR  [key(2)]=1",,LH,,,,"KEY: Independence"
+ip_knowledgescreening5pre,training_immediate_post,,radio,"Screening for sensory impairment","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas5]=1 OR  [key(2)]=1",,LH,,,,"KEY: Independence"
+ip_knowledgeintervention2pre,training_immediate_post,,radio,"How to implement appropriate interventions for all types of impairment (e.g., sensory, functional, etc.)","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai2]=1 OR  [key(2)]=1",,LH,,,,"KEY: Independence"
+ip_knowledgescreening7pre,training_immediate_post,Safety,radio,"How to recognize elder abuse (e.g, red flags for physical, psychological and financial abuse, as well as self-neglect)","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas7]=1 OR  [key(3)]=1",,LH,,,,"KEY: Safety"
+ip_knowledgeintervention3pre,training_immediate_post,,radio,"How to implement appropriate interventions to reduce fall risk","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai3]=1 OR  [key(3)]=1",,LH,,,,"KEY: Safety"
+ip_knowledgeintervention6pre,training_immediate_post,,radio,"How to report elder abuse or self-neglect","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai6]=1 OR  [key(3)]=1",,LH,,,,"KEY: Safety"
+ip_knowledgegeriatric1pre,training_immediate_post,"Individualized goal-setting",radio,"Scope of care models for older adults, such as in-home care and residential long-term care, and how they are funded","1,1|2,2|3,3|4,4|5,5",,,,,,"[kag1]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgegeriatric5pre,training_immediate_post,,radio,"When to utilize emergency services","1,1|2,2|3,3|4,4|5,5",,,,,,"[kag5]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgeintervention4pre,training_immediate_post,,radio,"How to engage older adults and/or their surrogates in self-management and care priorities ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai4]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgeintervention5pre,training_immediate_post,,radio,"How to engage older adults and/or their surrogates in advance care planning","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai5]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgeclinician2pre,training_immediate_post,,radio,"Using prognostication tools ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kac2]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgeclinician3pre,training_immediate_post,,radio,"How to promote age- and prognosis-appropriate preventive care","1,1|2,2|3,3|4,4|5,5",,,,,,"[kac3]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgescreening3pre,training_immediate_post,"Mental Health",radio,"Screening for social isolation","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas3]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_knowledgescreening4pre,training_immediate_post,,radio,"Screening for common mental health disorders such as depression, anxiety, etc.","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas4]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_knowledgescreening6pre,training_immediate_post,,radio,"How to recognize caregiver burnout (e.g., red flags)","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas6]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_knowledgeintervention1pre,training_immediate_post,,radio,"How to address substance and alcohol abuse","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai1]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_knowledgeintervention7pre,training_immediate_post,,radio,"Providing guidance and community referrals to caregivers of adults ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai7]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_knowledgeintervention8pre,training_immediate_post,,radio,"Providing guidance and community referrals for mental health evaluation and treatment","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai8]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_knowledgeafterdesc,training_immediate_post,"<b>KNOWLEDGE AFTER TRAINING</b>",descriptive,"<p>Rate your knowledge <u>after</u> today's training of each of the following issues related to the care of older adults</p><p>(1 = None, 2 = A Little, 3 = Adequate, 4 = Considerable, 5 = High)</p>",,,,,,,[suppressimmediatepost]<>1,,,,,,
+ip_knowledgegeriatric4post,training_immediate_post,General,radio,"Roles of different disciplines in Interprofessional team care planning","1,1|2,2|3,3|4,4|5,5",,,,,,"[kag4]=1 OR  [key(0)]=1",,LH,,,,"KEY: General"
+ip_knowledgegeriatric2post,training_immediate_post,Cognition,radio,"Non-medication approaches for dementia-associated behaviors","1,1|2,2|3,3|4,4|5,5",,,,,,"[kag2]=1 OR  [key(1)]=1",,LH,,,,"KEY: Cognition"
+ip_knowledgegeriatric3post,training_immediate_post,,radio,"Problematic medications and drug interactions in older adults ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kag3]=1 OR  [key(1)]=1",,LH,,,,"KEY: Cognition"
+ip_knowledgescreening2post,training_immediate_post,,radio,"Using cognitive screening tools ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas2]=1 OR  [key(1)]=1",,LH,,,,"KEY: Cognition"
+ip_knowledgeclinician1post,training_immediate_post,,radio,"How to distinguish between capacity and competency ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kac1]=1 OR  [key(1)]=1",,LH,,,,"KEY: Cognition"
+ip_knowledgescreening1post,training_immediate_post,Independence,radio,"How to assess activities of daily living (ADLs) and instrumental activities of daily living (IADLs)","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas1]=1 OR  [key(2)]=1",,LH,,,,"KEY: Independence"
+ip_knowledgescreening5post,training_immediate_post,,radio,"Screening for sensory impairment","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas5]=1 OR  [key(2)]=1",,LH,,,,"KEY: Independence"
+ip_knowledgeintervention2post,training_immediate_post,,radio,"How to implement appropriate interventions for all types of impairment (e.g., sensory, functional, etc.)","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai2]=1 OR  [key(2)]=1",,LH,,,,"KEY: Independence"
+ip_knowledgescreening7post,training_immediate_post,Safety,radio,"How to recognize elder abuse (e.g, red flags for physical, psychological and financial abuse, as well as self-neglect)","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas7]=1 OR  [key(3)]=1",,LH,,,,"KEY: Safety"
+ip_knowledgeintervention3post,training_immediate_post,,radio,"How to implement appropriate interventions to reduce fall risk","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai3]=1 OR  [key(3)]=1",,LH,,,,"KEY: Safety"
+ip_knowledgeintervention6post,training_immediate_post,,radio,"How to report elder abuse or self-neglect","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai6]=1 OR  [key(3)]=1",,LH,,,,"KEY: Safety"
+ip_knowledgegeriatric1post,training_immediate_post,"Individualized goal-setting",radio,"Scope of care models for older adults, such as in-home care and residential long-term care, and how they are funded","1,1|2,2|3,3|4,4|5,5",,,,,,"[kag1]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgegeriatric5post,training_immediate_post,,radio,"When to utilize emergency services","1,1|2,2|3,3|4,4|5,5",,,,,,"[kag5]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgeintervention4post,training_immediate_post,,radio,"How to engage older adults and/or their surrogates in self-management and care priorities ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai4]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgeintervention5post,training_immediate_post,,radio,"How to engage older adults and/or their surrogates in advance care planning","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai5]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgeclinician2post,training_immediate_post,,radio,"Using prognostication tools ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kac2]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgeclinician3post,training_immediate_post,,radio,"How to promote age- and prognosis-appropriate preventive care","1,1|2,2|3,3|4,4|5,5",,,,,,"[kac3]=1 OR  [key(4)]=1",,LH,,,,"KEY: Individualized goal-setting"
+ip_knowledgescreening3post,training_immediate_post,"Mental Health",radio,"Screening for social isolation","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas3]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_knowledgescreening4post,training_immediate_post,,radio,"Screening for common mental health disorders such as depression, anxiety, etc.","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas4]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_knowledgescreening6post,training_immediate_post,,radio,"How to recognize caregiver burnout (e.g., red flags)","1,1|2,2|3,3|4,4|5,5",,,,,,"[kas6]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_knowledgeintervention1post,training_immediate_post,,radio,"How to address substance and alcohol abuse","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai1]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_knowledgeintervention7post,training_immediate_post,,radio,"Providing guidance and community referrals to caregivers of adults ","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai7]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_knowledgeintervention8post,training_immediate_post,,radio,"Providing guidance and community referrals for mental health evaluation and treatment","1,1|2,2|3,3|4,4|5,5",,,,,,"[kai8]=1 OR  [key(5)]=1",,LH,,,,"KEY: Mental Health"
+ip_completiontext,training_immediate_post,Complete,descriptive,"Thank you for your participation!  If you entered your email address, we will send you a brief followup survey in about six weeks.",,,,,,,[suppressimmediatepost]<>1,,,,,,
+cc_introtext,commitment_to_change_6_months,,descriptive,"Previously you attended a training about dementia given by trainers through the Geriatrics Workforce Enhancement Program on [auto_trainingdate]",,,,,,,,,,,,,
+cc_previousstatement,commitment_to_change_6_months,,descriptive,"You provided us with a commitment to change statement at the end of that session, which we have copied here:
+
+<i>[pe_plannedchangescog]</i>
+
+
+Refer to this statement when answering the following questions.",,,,,,,,,,,,,
+cc_implementedchange,commitment_to_change_6_months,,radio,"Did you implement the change described above?","2, I implemented the change. | 1, I partially implemented the change. | 0, I did not implement the change.",,,,,,,,,,,,
+cc_changebarriers,commitment_to_change_6_months,,notes,"Describe what barriers you experienced to implementing the change described above.",,,,,,,,,LH,,,,
+cc_changeplans,commitment_to_change_6_months,,notes,"Describe any plans you have for implementing the change in the future.",,,,,,,,,LH,,,,
+cc_changecomments,commitment_to_change_6_months,,notes,"Provide any further comments about implementing your commitment to change statement here.",,,,,,,,,LH,,,,
