@@ -1,9 +1,10 @@
 # gwep-analysis
 UCSF Geriatric Workforce Enhancement Program data set preparation and initial analysis.  Unsupported, prototype-quality SAS code for initial data set treatment and examination for publication and dissemination.
 
-REDCap project build scripts:
 
-*GWEPTrainingEventOverview_DataDictionary.csv*
+**REDCap project build scripts:**
+
+*_GWEPTrainingEventOverview_DataDictionary.csv_*
 
 		GWEP Training Event Overview system project data dictionary file (suitable for quick builds in REDCap or data dictionary review)
 
@@ -20,13 +21,14 @@ REDCap project build scripts:
 		GWEP Training Evaluation Platform system CDISC ODM formatted project metadata file (suitable for complete system builds or standing system up on other CDISC systems)
 
 
-Source data set:
+**Source data set:**
 
 *OAC export spreadsheet TEMPLATE.xlsx*
 	 
 		Contains tables and lookups for transforming coded output data from multiple GWEP data systems (*GWEP Training Event Overview* and *GWEP training evaluation platform* in REDCap into a single, denormalized human-readable output.  CSV exports should be taken from each of these systems and loaded into the matching worksheet in the Excel file, and then the *OUTPUT DATA* tab should be converted into a SAS file using StatTransfer, delivering the final file as *preanal.sas7bdat*.
 
-Main code thread:
+
+**Main code thread:**
 
 *1 - GWEP data definition.sas*
   
@@ -40,7 +42,8 @@ Main code thread:
   
 		Contains a simple t-test macro and t-tests for each combined question ("key") scale pre- and post- values with output including p-values.
       
-Modelling code:
+      
+**Modelling code:**
 
 *MODELLING 1 - GWEP prepare data sets for modelling.sas*
   
