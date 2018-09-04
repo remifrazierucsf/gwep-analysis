@@ -13,7 +13,7 @@
 /*	Data should then be output from Excel to SAS via StatTransfer for	*/
 /*	the analysis conducted herein.										*/
 libname GWEP 'C:\Users\rfrazier\Desktop\Remi\$working\GWEP\ANALYSIS';
-
+ 
 
 
 /*------------------------------------------------------------------------------*/
