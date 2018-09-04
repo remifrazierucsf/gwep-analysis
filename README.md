@@ -1,5 +1,5 @@
 # gwep-analysis
-UCSF Geriatric Workforce Enhancement Program data set preparation and initial analysis.  Prototype-quality SAS code for initial data set treatment and examination for publication and dissemination.
+UCSF Geriatric Workforce Enhancement Program data set preparation and initial analysis.  Unsupported, prototype-quality SAS code for initial data set treatment and examination for publication and dissemination.
 
 Main code thread:
 
