@@ -4,7 +4,7 @@ UCSF Geriatric Workforce Enhancement Program data set preparation and initial an
 
 **REDCap project build scripts:**
 
-*GWEPTrainingEventOverview_DataDictionary.csv*
+*_GWEPTrainingEventOverview_DataDictionary.csv_*
 
 		GWEP Training Event Overview system project data dictionary file (suitable for quick builds in REDCap or data dictionary review)
 
