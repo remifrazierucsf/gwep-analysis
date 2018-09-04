@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------*/
 /* GENERAL ESTIMATING EQUATION MODELS												*/
 /*																					*/
-
+ 
 /*----------------------------------------------------------------------------------*/
 /*	Baseline-Change simple GEE; anticipated a binomial distribution, two timepoints,*/
 /*	and attempts to correct exponential output for scale based on 0-100 range.		*/
