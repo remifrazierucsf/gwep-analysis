@@ -1,6 +1,6 @@
 ﻿%macro ttestquick(data, var1, var2);
 	proc ttest data=&data;
-
+ 
 		PAIRED &var1*&var2;
 		      ods output TTests=TTests(REPLACE=yes);
 	run;
