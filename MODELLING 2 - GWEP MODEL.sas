@@ -1,17 +1,33 @@
+/*----------------------------------------------------------------------------------*/
+/* GENERAL ESTIMATING EQUATION MODELS												*/
+/*																					*/
+
+/*----------------------------------------------------------------------------------*/
+/*	Baseline-Change simple GEE; anticipated a binomial distribution, two timepoints,*/
+/*	and attempts to correct exponential output for scale based on 0-100 range.		*/
+/*																					*/
+/*	Sample usage:																	*/
+/*		%modl(isClinical,KNOW_Non_medication_approaches_f--KNOW_Problematic_medications_and,timepoint);*/
 %macro modl(outcome, var, timepoint);
 	title &var;
 	proc genmod data=GWEP.modanal descending;
-		/*class sitename origin;*/
+		/*class class1 class2;*/ /*add custom classes as needed*/
 		where &outcome ne .;
 		model &outcome = &var &timepoint &var*&timepoint / dist=binomial link=logit;
-		/*repeated subject=sitename; */
+		/*repeated subject=repeat1; */ /*add repeated subjects as needed*/
 		estimate 'bl' &var 10/exp;
 		estimate 'change' &var*&timepoint 60/exp;
 	run;
 %mend modl;
 
-*%modl(isClinical,KNOW_Non_medication_approaches_f--KNOW_Problematic_medications_and,timepoint);
 
+
+/*----------------------------------------------------------------------------------*/
+/*	Multiple variable execution of %modl 											*/
+/*																					*/
+/*Sample usage:																		*/
+/*%multimodl(KNOW_Non_medication_approaches_f--KNOW_Providing_guidance_and_com0);	*/
+/*%multimodl(Cognition Independence Safety Goals MentalHealth);						*/
 %macro multimodl(name_list);
 	%local i next_name;
 	%do i=1 %to %sysfunc(countw(&name_list));
@@ -22,11 +38,12 @@
 %mend multimodl;
 
 
-*ods trace on;
-
-%multimodl(KNOW_Non_medication_approaches_f--KNOW_Providing_guidance_and_com0);
-*ods trace off;
-
+/*----------------------------------------------------------------------------------*/
+/* AUTOMATED OUTPUT HOOKS															*/
+/*																					*/
+/*	ODS suitable variants of the macros above. Because utility of this is highly 	*/
+/*	dependent on anticipated usage, it is left to the user to employ "ods trace on" */
+/*	to find output hooks for downstream processing									*/
 
 %macro modlOdsAuto(outcome, var, timepoint);
 	title &var;
@@ -59,7 +76,7 @@
 		DELETE myEstimates;
 	RUN;
 
-%mend modlOds;
+%mend modlOdsAuto;
 
 %macro multiModlOds(name_list);
 	
@@ -81,34 +98,7 @@
 					APPEND BASE=_multiOut DATA=_estimateOut;
 				RUN;
 			%end;
-/*    proc print data=_estimateOut;
-       * 'Values of Car, Age, and the Predicted Values';
-    run;
-*/
+
 
 	%end;
-%mend multimodl;
-
-
-ods listing close;
-*		%modlOds(isClinical,KNOW_Non_medication_approaches_f,timepoint);
-*ods exclude none;
-
-title "Multiple models";
-*		%multiModlOds(KNOW_Non_medication_approaches_f);
-*		%multiModlOds(KNOW_Non_medication_approaches_f--KNOW_Screening_for_sensory_impai);
-
- *   proc print data=_multiOut;
-       * 'Values of Car, Age, and the Predicted Values';
-  *  run;
-
-	/*
- ods listing;
-    proc print data=myEstimates noobs;
-       * 'Values of Car, Age, and the Predicted Values';
-    run;
-
-
-
-*/
-%multimodl(Cognition Independence Safety Goals MentalHealth);
+%mend multiModlOds;
