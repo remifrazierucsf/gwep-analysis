@@ -12,6 +12,10 @@ UCSF Geriatric Workforce Enhancement Program data set preparation and initial an
 	
 		GWEP Training Evaluation Platform system project data dictionary file (suitable for quick builds in REDCap or data dictionary review)
 
+*GWEPProcessEvaluation_DataDictionary.csv*
+	
+		GWEP Process Evaluation standalone system project data dictionary file (suitable for quick builds in REDCap or data dictionary review)
+
 *GWEPTrainingEventOverview.REDCap.xml*
 	
 		GWEP Training Event Overview system CDISC ODM formatted project metadata file (suitable for complete system builds or standing system up on other CDISC systems)
@@ -20,6 +24,10 @@ UCSF Geriatric Workforce Enhancement Program data set preparation and initial an
 
 		GWEP Training Evaluation Platform system CDISC ODM formatted project metadata file (suitable for complete system builds or standing system up on other CDISC systems)
 
+*GWEPProcessEvaluation.REDCap.xml*
+
+		GWEP Process Evaluation standalone system CDISC ODM formatted project metadata file (suitable for complete system builds or standing system up on other CDISC systems)
+		
 
 **Source data set:**
 
